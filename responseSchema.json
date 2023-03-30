@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "type": "array",
+  "items": {
+    "$ref": "#/definitions/Welcome5Element"
+  },
+  "definitions": {
+    "Welcome5Element": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "name": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "gender": {
+          "$ref": "string"
+        },
+        "status": {
+          "$ref": "string"
+        }
+      },
+      "title": "Welcome5Element"
+    }
+  }
+}
