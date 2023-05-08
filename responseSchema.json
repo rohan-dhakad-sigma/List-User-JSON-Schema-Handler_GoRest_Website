@@ -1,31 +1,46 @@
 {
-  "$schema": "http://json-schema.org/draft-06/schema#",
-  "type": "array",
-  "items": {
-    "$ref": "#/definitions/Welcome5Element"
-  },
-  "definitions": {
-    "Welcome5Element": {
-      "type": "object",
-      "additionalProperties": false,
-      "properties": {
-        "id": {
-          "type": "integer"
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "type": "array",
+    "items": {
+        "$ref": "#/definitions/Welcome5Element"
+    },
+    "definitions": {
+        "Welcome5Element": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "type": "integer"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "email": {
+                    "type": "string"
+                },
+                "gender": {
+                    "$ref": "#/definitions/Gender"
+                },
+                "status": {
+                    "$ref": "#/definitions/Status"
+                }
+            },
+            "title": "Welcome5Element"
         },
-        "name": {
-          "type": "string"
+        "Gender": {
+            "type": "string",
+            "enum": [
+                "male",
+                "female"
+            ],
+            "title": "Gender"
         },
-        "email": {
-          "type": "string"
-        },
-        "gender": {
-          "$ref": "string"
-        },
-        "status": {
-          "$ref": "string"
+        "Status": {
+            "type": "string",
+            "enum": [
+                "active"
+            ],
+            "title": "Status"
         }
-      },
-      "title": "Welcome5Element"
     }
-  }
 }
