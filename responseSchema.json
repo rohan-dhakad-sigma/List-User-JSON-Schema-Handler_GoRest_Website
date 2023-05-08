@@ -22,7 +22,7 @@
                     "$ref": "#/definitions/Gender"
                 },
                 "status": {
-                    "$ref": "#/definitions/Status"
+                    "type": "string"
                 }
             },
             "title": "Welcome5Element"
@@ -34,13 +34,6 @@
                 "female"
             ],
             "title": "Gender"
-        },
-        "Status": {
-            "type": "string",
-            "enum": [
-                "active"
-            ],
-            "title": "Status"
         }
     }
 }
